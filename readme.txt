@@ -5,7 +5,7 @@ Tags: summary, post summary, OpenAI, content generation, WordPress
 Requires at least: 5.0
 Tested up to: 6.3
 Requires PHP: 7.2
-Stable tag: 1.11
+Stable tag: 1.00
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
