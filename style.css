@@ -1,0 +1,128 @@
+/* Input and Textarea Styles */
+.quickpost-input,
+.quickpost-textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 16px; /* Accessible font size */
+}
+
+.quickpost-textarea {
+    height: 100px;
+}
+
+/* General Button Styles */
+.quickpost-btn {
+    padding: 12px 16px; /* Increased padding for touch accessibility */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for readability */
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Specific Button Styles */
+.quickpost-generate-btn {
+    background-color: #0073aa;
+    color: white;
+}
+.quickpost-generate-btn:hover {
+    background-color: #005f8d;
+}
+
+.quickpost-save-btn {
+    background-color: #28a745;
+    color: white;
+}
+.quickpost-save-btn:hover {
+    background-color: #218838;
+}
+#show-summary-button {
+    width: 100%;
+    display: none;
+}
+
+/* Media query to only show on smaller screens */
+@media (max-width: 600px) {
+    #show-summary-button {
+        display: block;
+    }
+}
+
+
+
+
+/* Modal Overlay - Centering the Modal */
+.quickpost-modal-overlay {
+    display: none; /* Hidden by default; shown when triggered */
+    position: fixed; /* Keeps modal centered in the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent overlay */
+    z-index: 1000; /* Ensures modal appears above other elements */
+    
+    /* Flexbox Centering */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 10px; /* Add padding for small screens */
+}
+
+/* Modal Content Box */
+.quickpost-modal-content {
+    background-color: #333;
+    width: 95vw; /* Responsive width */
+    max-width: 95vw; /* Limit width on larger screens */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px; /* Accessible font size */
+    line-height: 1.6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Drop shadow for emphasis */
+}
+
+/* Modal Heading */
+.quickpost-modal-content h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #fff;
+}
+
+/* Close Button Inside Modal */
+.quickpost-modal-close-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 15px; /* Larger padding for touch accessibility */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1em;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+.quickpost-modal-close-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .quickpost-modal-content {
+        width: 95%; /* Full width for small screens */
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .quickpost-modal-close-btn {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
